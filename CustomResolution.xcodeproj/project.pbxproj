@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B894D3F54BC0701A0139B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA3967B432157AD043E229 /* Assets.xcassets */; };
+		103859E9E6E6648388E88761 /* ResolutionTogglePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B16CECAEA1DE666010A52 /* ResolutionTogglePlan.swift */; };
+		14BF5DD50A9152964F226B7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9C74C82A5C3C2AFD1A327A /* ContentView.swift */; };
+		14C5C33ACB2EBFB0607142F2 /* OverrideFileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2AE4B66D2013753D233C7A /* OverrideFileBuilder.swift */; };
+		17679BECE235F6DFBD236102 /* AspectRatioPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAE639F48607894CECF3450 /* AspectRatioPreset.swift */; };
+		192AC15FB78C5D6E14E3A79B /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411BE075D4BF3649A33DD01 /* AppModel.swift */; };
+		2051FBDB39F55F50A8CC395E /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF94ADAF3BC30D45C6AA5A1 /* AppAlert.swift */; };
+		20E37D6EC0144BB73C669B67 /* DisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908C7A288788E1E298269E32 /* DisplayInfo.swift */; };
+		247D425760CE7EDD0D662D39 /* SharedConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8089A9042D28F0701A6A7 /* SharedConfig.swift */; };
+		26FFBC7982599F5354ADDA42 /* SwitchResolution.app in Embed Dependencies */ = {isa = PBXBuildFile; fileRef = 1926F5F8399D293EAD4D1141 /* SwitchResolution.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B02692A52687B02817E8100 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1805DAEB92E287B5D8D0389E /* main.swift */; };
+		407AB37B6A77BC6681F06581 /* RestartRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A87AD9881691BB60FEE841A /* RestartRequester.swift */; };
+		41FCEF9BF6C35B0B1AB90DDD /* ResolutionProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9735C0FB9EF43610E2423B /* ResolutionProfile.swift */; };
+		435F513E99DCC7973C6D234C /* ProfileStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77DECF5F62AD73CEC6B5FF2 /* ProfileStatus.swift */; };
+		448D2464D2CC4F8DC40DBD2B /* ResolutionToggleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59941BE0C549C72A8365D70 /* ResolutionToggleError.swift */; };
+		4595D325173D1A479E8BB056 /* ScaleResolutionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C974B6703164C5F585E1C41 /* ScaleResolutionEntry.swift */; };
+		487EBA9EDBA01E2E85FE5458 /* DisplayServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE1CEF63B123FC61E9621F /* DisplayServiceError.swift */; };
+		4B97471FA53D86B5508D2F35 /* DisplayModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D5FAF118B9F03B4B81C65 /* DisplayModeSpec.swift */; };
+		67933F434F656BF6074ADE42 /* StatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B171599CDFCDB41D6DB318 /* StatusRow.swift */; };
+		70554E40C4DE493C170FB508 /* DisplayModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D5FAF118B9F03B4B81C65 /* DisplayModeSpec.swift */; };
+		76084A9D8C80E5363D82BA05 /* SwitchSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333EC949A3CD22859FB57CA /* SwitchSection.swift */; };
+		809C3BA1BD3C536A59D030A8 /* CustomResolutionSpecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BBF42878C096A7770B503A /* CustomResolutionSpecTests.swift */; };
+		870029AAA7D7E7D4B9AC3274 /* DisplayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6834C16CEF080AF749A3BDB /* DisplayService.swift */; };
+		88DF72ECD31942D39C4A5DEA /* ShortcutInstallerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E04CA5A92F36FC62FCC3F9C /* ShortcutInstallerError.swift */; };
+		8A291B602AFFE28BF4C01C23 /* CustomResolutionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF80A4C839141307A0A05F6E /* CustomResolutionSpec.swift */; };
+		8C56D828163B593C3A4FA851 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE35E46B6ED43E3256D460F5 /* Design.swift */; };
+		91CB0D0B08CBF5EB0B29DCB5 /* CustomResolutionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9CBFA3911268FAEF53F9E /* CustomResolutionApp.swift */; };
+		9465A4DDF6E5F967022309B2 /* ShortcutSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D030848071C166554971396 /* ShortcutSection.swift */; };
+		9B2D906594ADCDD974E09272 /* ResolutionToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D941FD8666D1DF61A2A8728 /* ResolutionToggle.swift */; };
+		9D268D685E0D15FB2E5650B6 /* OverrideManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42928B7BF4334508F87E013 /* OverrideManager.swift */; };
+		9F1694AF62169CED855C7668 /* AdminCommandError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B64C1293EE5E6AF7827889 /* AdminCommandError.swift */; };
+		A00FE15C70963B612174FB83 /* ScaleResolutionEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4967F28C174054A4F858B /* ScaleResolutionEntryTests.swift */; };
+		A14164EED5BC2F92B350A5B6 /* OverrideError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87437FC0ADBE60FBF1C55053 /* OverrideError.swift */; };
+		AD946295964FA3E44C1468AA /* ShortcutInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDD01E22C1FE3DAB390E4DF /* ShortcutInstaller.swift */; };
+		AE6ABD29D05B9E66AC87E711 /* ResolutionToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D941FD8666D1DF61A2A8728 /* ResolutionToggle.swift */; };
+		B0751BEF7DE71C1C30D5BC93 /* DisplayServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCE1CEF63B123FC61E9621F /* DisplayServiceError.swift */; };
+		B498426C9CD2638F8DF3B345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA14587E57D566BC2A3BF13 /* Assets.xcassets */; };
+		B9C1666A7C7022E54B4DE72F /* DisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908C7A288788E1E298269E32 /* DisplayInfo.swift */; };
+		C40A30E0B83B275F9765F363 /* CustomResolutionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A760A09322F98A87B8AD1B76 /* CustomResolutionSection.swift */; };
+		C611B0CC98CDE02E1022A812 /* AdminCommandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10476219D4E2CE2FC80BC324 /* AdminCommandRunner.swift */; };
+		C9C057B92F821AFD4CDED394 /* OverrideFileBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8D99171C878E918C94CBB7 /* OverrideFileBuilderTests.swift */; };
+		DA6C3C8A2BEE293E23668A44 /* ResolutionProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9735C0FB9EF43610E2423B /* ResolutionProfile.swift */; };
+		EDA6C6FA02C87F8ABD3E9E41 /* DisplaySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3515CC28CF72F4985B28566D /* DisplaySection.swift */; };
+		F088D203AF903977082511DD /* ResolutionTogglePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43B16CECAEA1DE666010A52 /* ResolutionTogglePlan.swift */; };
+		F1DBCFA8725892B89A99D992 /* SharedConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C8089A9042D28F0701A6A7 /* SharedConfig.swift */; };
+		FBE55DE0314AE45B2DCCC749 /* ResolutionToggleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59941BE0C549C72A8365D70 /* ResolutionToggleError.swift */; };
+		FE899CF615F30BCF5F6F9144 /* DisplayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6834C16CEF080AF749A3BDB /* DisplayService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		442AAC6C6330093BBFF74475 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F25F83ADC599CF7C3CF7D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0CB4EB1D67DD3B6FA45FA5A;
+			remoteInfo = CustomResolution;
+		};
+		4F756470CC7B1AAFEE3FA82E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F25F83ADC599CF7C3CF7D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDA8473F4A8D5DACB10B5687;
+			remoteInfo = SwitchResolution;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EA08B0B5671140B7D8134CD /* Embed Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				26FFBC7982599F5354ADDA42 /* SwitchResolution.app in Embed Dependencies */,
+			);
+			name = "Embed Dependencies";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10476219D4E2CE2FC80BC324 /* AdminCommandRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCommandRunner.swift; sourceTree = "<group>"; };
+		1805DAEB92E287B5D8D0389E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1926F5F8399D293EAD4D1141 /* SwitchResolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchResolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCE1CEF63B123FC61E9621F /* DisplayServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayServiceError.swift; sourceTree = "<group>"; };
+		1EDD01E22C1FE3DAB390E4DF /* ShortcutInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutInstaller.swift; sourceTree = "<group>"; };
+		2D9735C0FB9EF43610E2423B /* ResolutionProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionProfile.swift; sourceTree = "<group>"; };
+		3515CC28CF72F4985B28566D /* DisplaySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySection.swift; sourceTree = "<group>"; };
+		3BF94ADAF3BC30D45C6AA5A1 /* AppAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAlert.swift; sourceTree = "<group>"; };
+		3D030848071C166554971396 /* ShortcutSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutSection.swift; sourceTree = "<group>"; };
+		4EDA3967B432157AD043E229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6333EC949A3CD22859FB57CA /* SwitchSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSection.swift; sourceTree = "<group>"; };
+		6E01A6BA74012E58813A851E /* CustomResolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomResolutionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C83216C6D4AA40EF82ED2E /* CustomResolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomResolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BBF42878C096A7770B503A /* CustomResolutionSpecTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResolutionSpecTests.swift; sourceTree = "<group>"; };
+		7A87AD9881691BB60FEE841A /* RestartRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestartRequester.swift; sourceTree = "<group>"; };
+		7C974B6703164C5F585E1C41 /* ScaleResolutionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleResolutionEntry.swift; sourceTree = "<group>"; };
+		7E04CA5A92F36FC62FCC3F9C /* ShortcutInstallerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutInstallerError.swift; sourceTree = "<group>"; };
+		7E9C74C82A5C3C2AFD1A327A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		830D5FAF118B9F03B4B81C65 /* DisplayModeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModeSpec.swift; sourceTree = "<group>"; };
+		87437FC0ADBE60FBF1C55053 /* OverrideError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideError.swift; sourceTree = "<group>"; };
+		88F4967F28C174054A4F858B /* ScaleResolutionEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleResolutionEntryTests.swift; sourceTree = "<group>"; };
+		908C7A288788E1E298269E32 /* DisplayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayInfo.swift; sourceTree = "<group>"; };
+		9D941FD8666D1DF61A2A8728 /* ResolutionToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionToggle.swift; sourceTree = "<group>"; };
+		A42928B7BF4334508F87E013 /* OverrideManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideManager.swift; sourceTree = "<group>"; };
+		A43B16CECAEA1DE666010A52 /* ResolutionTogglePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionTogglePlan.swift; sourceTree = "<group>"; };
+		A6834C16CEF080AF749A3BDB /* DisplayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayService.swift; sourceTree = "<group>"; };
+		A760A09322F98A87B8AD1B76 /* CustomResolutionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResolutionSection.swift; sourceTree = "<group>"; };
+		AF80A4C839141307A0A05F6E /* CustomResolutionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResolutionSpec.swift; sourceTree = "<group>"; };
+		B5B64C1293EE5E6AF7827889 /* AdminCommandError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCommandError.swift; sourceTree = "<group>"; };
+		B6C8089A9042D28F0701A6A7 /* SharedConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConfig.swift; sourceTree = "<group>"; };
+		BDD57D33ED3DB372FF223C90 /* CustomResolution.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomResolution.entitlements; sourceTree = "<group>"; };
+		BE2AE4B66D2013753D233C7A /* OverrideFileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideFileBuilder.swift; sourceTree = "<group>"; };
+		C2B171599CDFCDB41D6DB318 /* StatusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusRow.swift; sourceTree = "<group>"; };
+		D411BE075D4BF3649A33DD01 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D77DECF5F62AD73CEC6B5FF2 /* ProfileStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatus.swift; sourceTree = "<group>"; };
+		ECAE639F48607894CECF3450 /* AspectRatioPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioPreset.swift; sourceTree = "<group>"; };
+		EE35E46B6ED43E3256D460F5 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		F59941BE0C549C72A8365D70 /* ResolutionToggleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolutionToggleError.swift; sourceTree = "<group>"; };
+		F8B9CBFA3911268FAEF53F9E /* CustomResolutionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResolutionApp.swift; sourceTree = "<group>"; };
+		FD8D99171C878E918C94CBB7 /* OverrideFileBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverrideFileBuilderTests.swift; sourceTree = "<group>"; };
+		FDA14587E57D566BC2A3BF13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1780E4640AE1FDFB52F5170F /* Override */ = {
+			isa = PBXGroup;
+			children = (
+				B5B64C1293EE5E6AF7827889 /* AdminCommandError.swift */,
+				10476219D4E2CE2FC80BC324 /* AdminCommandRunner.swift */,
+				87437FC0ADBE60FBF1C55053 /* OverrideError.swift */,
+				BE2AE4B66D2013753D233C7A /* OverrideFileBuilder.swift */,
+				A42928B7BF4334508F87E013 /* OverrideManager.swift */,
+				7C974B6703164C5F585E1C41 /* ScaleResolutionEntry.swift */,
+			);
+			path = Override;
+			sourceTree = "<group>";
+		};
+		26475B069437D4FFA3DEE45D /* Shortcut */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD01E22C1FE3DAB390E4DF /* ShortcutInstaller.swift */,
+				7E04CA5A92F36FC62FCC3F9C /* ShortcutInstallerError.swift */,
+				3D030848071C166554971396 /* ShortcutSection.swift */,
+			);
+			path = Shortcut;
+			sourceTree = "<group>";
+		};
+		34F3366A5E61EBDCF97BD6E1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3BF94ADAF3BC30D45C6AA5A1 /* AppAlert.swift */,
+				D411BE075D4BF3649A33DD01 /* AppModel.swift */,
+				7E9C74C82A5C3C2AFD1A327A /* ContentView.swift */,
+				F8B9CBFA3911268FAEF53F9E /* CustomResolutionApp.swift */,
+				EE35E46B6ED43E3256D460F5 /* Design.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		49CF537D2B7A939BB4DABF9F /* Resolution */ = {
+			isa = PBXGroup;
+			children = (
+				ECAE639F48607894CECF3450 /* AspectRatioPreset.swift */,
+				A760A09322F98A87B8AD1B76 /* CustomResolutionSection.swift */,
+				AF80A4C839141307A0A05F6E /* CustomResolutionSpec.swift */,
+			);
+			path = Resolution;
+			sourceTree = "<group>";
+		};
+		5CD27296282F2155DB29EC2E /* Switching */ = {
+			isa = PBXGroup;
+			children = (
+				D77DECF5F62AD73CEC6B5FF2 /* ProfileStatus.swift */,
+				7A87AD9881691BB60FEE841A /* RestartRequester.swift */,
+				C2B171599CDFCDB41D6DB318 /* StatusRow.swift */,
+				6333EC949A3CD22859FB57CA /* SwitchSection.swift */,
+			);
+			path = Switching;
+			sourceTree = "<group>";
+		};
+		B003C55C91FEBDA18633BA6F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				908C7A288788E1E298269E32 /* DisplayInfo.swift */,
+				830D5FAF118B9F03B4B81C65 /* DisplayModeSpec.swift */,
+				A6834C16CEF080AF749A3BDB /* DisplayService.swift */,
+				1BCE1CEF63B123FC61E9621F /* DisplayServiceError.swift */,
+				2D9735C0FB9EF43610E2423B /* ResolutionProfile.swift */,
+				9D941FD8666D1DF61A2A8728 /* ResolutionToggle.swift */,
+				F59941BE0C549C72A8365D70 /* ResolutionToggleError.swift */,
+				A43B16CECAEA1DE666010A52 /* ResolutionTogglePlan.swift */,
+				B6C8089A9042D28F0701A6A7 /* SharedConfig.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B5E661CB97A47BB9AC26914E = {
+			isa = PBXGroup;
+			children = (
+				FBCE9D17B5B6F7E4E77A2BED /* CustomResolution */,
+				FDC2FDB9D0C27FF82D92EA07 /* CustomResolutionTests */,
+				B003C55C91FEBDA18633BA6F /* Shared */,
+				EE27FF39B343C616F68AFDE8 /* SwitchResolution */,
+				B9D1D5B4CB52344C3960D954 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9D1D5B4CB52344C3960D954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71C83216C6D4AA40EF82ED2E /* CustomResolution.app */,
+				6E01A6BA74012E58813A851E /* CustomResolutionTests.xctest */,
+				1926F5F8399D293EAD4D1141 /* SwitchResolution.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5142D9BB5F68A05575D2389 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				3515CC28CF72F4985B28566D /* DisplaySection.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		EE27FF39B343C616F68AFDE8 /* SwitchResolution */ = {
+			isa = PBXGroup;
+			children = (
+				FDA14587E57D566BC2A3BF13 /* Assets.xcassets */,
+				1805DAEB92E287B5D8D0389E /* main.swift */,
+			);
+			path = SwitchResolution;
+			sourceTree = "<group>";
+		};
+		FBCE9D17B5B6F7E4E77A2BED /* CustomResolution */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA3967B432157AD043E229 /* Assets.xcassets */,
+				BDD57D33ED3DB372FF223C90 /* CustomResolution.entitlements */,
+				34F3366A5E61EBDCF97BD6E1 /* App */,
+				C5142D9BB5F68A05575D2389 /* Display */,
+				1780E4640AE1FDFB52F5170F /* Override */,
+				49CF537D2B7A939BB4DABF9F /* Resolution */,
+				26475B069437D4FFA3DEE45D /* Shortcut */,
+				5CD27296282F2155DB29EC2E /* Switching */,
+			);
+			path = CustomResolution;
+			sourceTree = "<group>";
+		};
+		FDC2FDB9D0C27FF82D92EA07 /* CustomResolutionTests */ = {
+			isa = PBXGroup;
+			children = (
+				73BBF42878C096A7770B503A /* CustomResolutionSpecTests.swift */,
+				FD8D99171C878E918C94CBB7 /* OverrideFileBuilderTests.swift */,
+				88F4967F28C174054A4F858B /* ScaleResolutionEntryTests.swift */,
+			);
+			path = CustomResolutionTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DD9BF6D9FE2B8D89C7741F0 /* CustomResolutionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C5D3529C4CEA35D002EC6A /* Build configuration list for PBXNativeTarget "CustomResolutionTests" */;
+			buildPhases = (
+				DD6A17756F99B42D540DE701 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76CDF1521273083AD38FE724 /* PBXTargetDependency */,
+			);
+			name = CustomResolutionTests;
+			packageProductDependencies = (
+			);
+			productName = CustomResolutionTests;
+			productReference = 6E01A6BA74012E58813A851E /* CustomResolutionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0CB4EB1D67DD3B6FA45FA5A /* CustomResolution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B16E7FD3EB9C965D3AFA5CE /* Build configuration list for PBXNativeTarget "CustomResolution" */;
+			buildPhases = (
+				97F395915B1B777F5A2A1521 /* Sources */,
+				F3C612A1687B20B2F5FE386C /* Resources */,
+				1EA08B0B5671140B7D8134CD /* Embed Dependencies */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED965264E75A351B5EDB678 /* PBXTargetDependency */,
+			);
+			name = CustomResolution;
+			packageProductDependencies = (
+			);
+			productName = CustomResolution;
+			productReference = 71C83216C6D4AA40EF82ED2E /* CustomResolution.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDA8473F4A8D5DACB10B5687 /* SwitchResolution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91533F144197AB9594C4CF9F /* Build configuration list for PBXNativeTarget "SwitchResolution" */;
+			buildPhases = (
+				A0AF5AE667BD834D960C5131 /* Sources */,
+				53AB4AB1185286B81A13B8E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchResolution;
+			packageProductDependencies = (
+			);
+			productName = SwitchResolution;
+			productReference = 1926F5F8399D293EAD4D1141 /* SwitchResolution.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F25F83ADC599CF7C3CF7D99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2DD9BF6D9FE2B8D89C7741F0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					B0CB4EB1D67DD3B6FA45FA5A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					DDA8473F4A8D5DACB10B5687 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 9F5D6EEB72F1376A75E45648 /* Build configuration list for PBXProject "CustomResolution" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B5E661CB97A47BB9AC26914E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B9D1D5B4CB52344C3960D954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0CB4EB1D67DD3B6FA45FA5A /* CustomResolution */,
+				2DD9BF6D9FE2B8D89C7741F0 /* CustomResolutionTests */,
+				DDA8473F4A8D5DACB10B5687 /* SwitchResolution */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53AB4AB1185286B81A13B8E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B498426C9CD2638F8DF3B345 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C612A1687B20B2F5FE386C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B894D3F54BC0701A0139B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97F395915B1B777F5A2A1521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1694AF62169CED855C7668 /* AdminCommandError.swift in Sources */,
+				C611B0CC98CDE02E1022A812 /* AdminCommandRunner.swift in Sources */,
+				2051FBDB39F55F50A8CC395E /* AppAlert.swift in Sources */,
+				192AC15FB78C5D6E14E3A79B /* AppModel.swift in Sources */,
+				17679BECE235F6DFBD236102 /* AspectRatioPreset.swift in Sources */,
+				14BF5DD50A9152964F226B7F /* ContentView.swift in Sources */,
+				91CB0D0B08CBF5EB0B29DCB5 /* CustomResolutionApp.swift in Sources */,
+				C40A30E0B83B275F9765F363 /* CustomResolutionSection.swift in Sources */,
+				8A291B602AFFE28BF4C01C23 /* CustomResolutionSpec.swift in Sources */,
+				8C56D828163B593C3A4FA851 /* Design.swift in Sources */,
+				20E37D6EC0144BB73C669B67 /* DisplayInfo.swift in Sources */,
+				4B97471FA53D86B5508D2F35 /* DisplayModeSpec.swift in Sources */,
+				EDA6C6FA02C87F8ABD3E9E41 /* DisplaySection.swift in Sources */,
+				FE899CF615F30BCF5F6F9144 /* DisplayService.swift in Sources */,
+				487EBA9EDBA01E2E85FE5458 /* DisplayServiceError.swift in Sources */,
+				A14164EED5BC2F92B350A5B6 /* OverrideError.swift in Sources */,
+				14C5C33ACB2EBFB0607142F2 /* OverrideFileBuilder.swift in Sources */,
+				9D268D685E0D15FB2E5650B6 /* OverrideManager.swift in Sources */,
+				435F513E99DCC7973C6D234C /* ProfileStatus.swift in Sources */,
+				DA6C3C8A2BEE293E23668A44 /* ResolutionProfile.swift in Sources */,
+				9B2D906594ADCDD974E09272 /* ResolutionToggle.swift in Sources */,
+				448D2464D2CC4F8DC40DBD2B /* ResolutionToggleError.swift in Sources */,
+				103859E9E6E6648388E88761 /* ResolutionTogglePlan.swift in Sources */,
+				407AB37B6A77BC6681F06581 /* RestartRequester.swift in Sources */,
+				4595D325173D1A479E8BB056 /* ScaleResolutionEntry.swift in Sources */,
+				247D425760CE7EDD0D662D39 /* SharedConfig.swift in Sources */,
+				AD946295964FA3E44C1468AA /* ShortcutInstaller.swift in Sources */,
+				88DF72ECD31942D39C4A5DEA /* ShortcutInstallerError.swift in Sources */,
+				9465A4DDF6E5F967022309B2 /* ShortcutSection.swift in Sources */,
+				67933F434F656BF6074ADE42 /* StatusRow.swift in Sources */,
+				76084A9D8C80E5363D82BA05 /* SwitchSection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0AF5AE667BD834D960C5131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C1666A7C7022E54B4DE72F /* DisplayInfo.swift in Sources */,
+				70554E40C4DE493C170FB508 /* DisplayModeSpec.swift in Sources */,
+				870029AAA7D7E7D4B9AC3274 /* DisplayService.swift in Sources */,
+				B0751BEF7DE71C1C30D5BC93 /* DisplayServiceError.swift in Sources */,
+				41FCEF9BF6C35B0B1AB90DDD /* ResolutionProfile.swift in Sources */,
+				AE6ABD29D05B9E66AC87E711 /* ResolutionToggle.swift in Sources */,
+				FBE55DE0314AE45B2DCCC749 /* ResolutionToggleError.swift in Sources */,
+				F088D203AF903977082511DD /* ResolutionTogglePlan.swift in Sources */,
+				F1DBCFA8725892B89A99D992 /* SharedConfig.swift in Sources */,
+				2B02692A52687B02817E8100 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6A17756F99B42D540DE701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809C3BA1BD3C536A59D030A8 /* CustomResolutionSpecTests.swift in Sources */,
+				C9C057B92F821AFD4CDED394 /* OverrideFileBuilderTests.swift in Sources */,
+				A00FE15C70963B612174FB83 /* ScaleResolutionEntryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76CDF1521273083AD38FE724 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0CB4EB1D67DD3B6FA45FA5A /* CustomResolution */;
+			targetProxy = 442AAC6C6330093BBFF74475 /* PBXContainerItemProxy */;
+		};
+		FED965264E75A351B5EDB678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDA8473F4A8D5DACB10B5687 /* SwitchResolution */;
+			targetProxy = 4F756470CC7B1AAFEE3FA82E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C58029EAB9040B96F550E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Switch Resolution";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicocavalcanti.SwitchResolution;
+				PRODUCT_MODULE_NAME = SwitchResolution;
+				PRODUCT_NAME = "Switch Resolution";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		22E3F93E9D85B186704D809C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomResolution/CustomResolution.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Custom Resolution";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Custom Resolution uses this to show the Restart dialog after changing your display settings.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicocavalcanti.CustomResolution;
+				PRODUCT_MODULE_NAME = CustomResolution;
+				PRODUCT_NAME = "Custom Resolution";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		258CD967D4072B71D1B7773E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicocavalcanti.CustomResolutionTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Custom Resolution.app/Contents/MacOS/Custom Resolution";
+			};
+			name = Debug;
+		};
+		5BC7D358F09C2A48FC6F4242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Switch Resolution";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicocavalcanti.SwitchResolution;
+				PRODUCT_MODULE_NAME = SwitchResolution;
+				PRODUCT_NAME = "Switch Resolution";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		92ACC6CA635060276DB347B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A5E6BE216C4E96B5E8B78A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C34F7B5F76F66470392EDC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicocavalcanti.CustomResolutionTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Custom Resolution.app/Contents/MacOS/Custom Resolution";
+			};
+			name = Release;
+		};
+		E149983974DB015BA2B14E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomResolution/CustomResolution.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Custom Resolution";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Custom Resolution uses this to show the Restart dialog after changing your display settings.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicocavalcanti.CustomResolution;
+				PRODUCT_MODULE_NAME = CustomResolution;
+				PRODUCT_NAME = "Custom Resolution";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66C5D3529C4CEA35D002EC6A /* Build configuration list for PBXNativeTarget "CustomResolutionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				258CD967D4072B71D1B7773E /* Debug */,
+				C34F7B5F76F66470392EDC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B16E7FD3EB9C965D3AFA5CE /* Build configuration list for PBXNativeTarget "CustomResolution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E149983974DB015BA2B14E1E /* Debug */,
+				22E3F93E9D85B186704D809C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		91533F144197AB9594C4CF9F /* Build configuration list for PBXNativeTarget "SwitchResolution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C58029EAB9040B96F550E21 /* Debug */,
+				5BC7D358F09C2A48FC6F4242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9F5D6EEB72F1376A75E45648 /* Build configuration list for PBXProject "CustomResolution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92ACC6CA635060276DB347B8 /* Debug */,
+				A5E6BE216C4E96B5E8B78A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F25F83ADC599CF7C3CF7D99 /* Project object */;
+}

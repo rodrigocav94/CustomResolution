@@ -1,0 +1,88 @@
+name: CustomResolution
+options:
+  bundleIdPrefix: com.nicocavalcanti
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_APPROACHABLE_CONCURRENCY: YES
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    DEVELOPMENT_TEAM: ""
+    ENABLE_APP_SANDBOX: NO
+    DEAD_CODE_STRIPPING: YES
+  configs:
+    Release:
+      ENABLE_HARDENED_RUNTIME: YES
+targets:
+  SwitchResolution:
+    type: application
+    platform: macOS
+    sources:
+      - SwitchResolution
+      - Shared
+    settings:
+      base:
+        PRODUCT_NAME: Switch Resolution
+        PRODUCT_MODULE_NAME: SwitchResolution
+        PRODUCT_BUNDLE_IDENTIFIER: com.nicocavalcanti.SwitchResolution
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Switch Resolution
+        INFOPLIST_KEY_LSUIElement: YES
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SKIP_INSTALL: YES
+  CustomResolution:
+    type: application
+    platform: macOS
+    sources:
+      - CustomResolution
+      - Shared
+    entitlements:
+      path: CustomResolution/CustomResolution.entitlements
+      properties:
+        com.apple.security.automation.apple-events: true
+    dependencies:
+      - target: SwitchResolution
+        embed: true
+        copy:
+          destination: resources
+    settings:
+      base:
+        PRODUCT_NAME: Custom Resolution
+        PRODUCT_MODULE_NAME: CustomResolution
+        PRODUCT_BUNDLE_IDENTIFIER: com.nicocavalcanti.CustomResolution
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Custom Resolution
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_NSAppleEventsUsageDescription: Custom Resolution uses this to show the Restart dialog after changing your display settings.
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  CustomResolutionTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - CustomResolutionTests
+    dependencies:
+      - target: CustomResolution
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nicocavalcanti.CustomResolutionTests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Custom Resolution.app/Contents/MacOS/Custom Resolution"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  CustomResolution:
+    build:
+      targets:
+        CustomResolution: all
+        CustomResolutionTests: [test]
+    test:
+      config: Debug
+      targets:
+        - CustomResolutionTests
+    archive:
+      config: Release
